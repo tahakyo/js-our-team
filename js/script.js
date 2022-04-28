@@ -30,3 +30,12 @@ const team = [
       image: 'barbara-ramos-graphic-designer.jpg',
     },
   ];
+
+// MILESTONE 1:
+// stampare su console le informazioni di nome, ruolo e la stringa della foto
+
+// stampa con dot notation
+for (let i = 0; i < team.length; i++) {
+    const infoElement = team[i];
+    console.log(infoElement.name, infoElement.role, infoElement.image);
+}
