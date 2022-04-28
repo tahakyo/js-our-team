@@ -39,3 +39,11 @@ for (let i = 0; i < team.length; i++) {
     const infoElement = team[i];
     console.log(infoElement.name, infoElement.role, infoElement.image);
 }
+// MILESTONE 2:
+// stampare le stesse informazioni su DOM sottoforma di stringhe
+// const teamInfoDom = document.querySelector('.team');
+// let myString = JSON.stringify(person);
+// document.getElementById("demo").innerHTML = myString;
+
+let teamInfoDom = JSON.stringify(team);
+document.getElementById("team").innerHTML = teamInfoDom;
