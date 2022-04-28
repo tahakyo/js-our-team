@@ -31,6 +31,8 @@ const team = [
     },
   ];
 
+
+
 // MILESTONE 1:
 // stampare su console le informazioni di nome, ruolo e la stringa della foto
 
@@ -38,12 +40,40 @@ const team = [
 for (let i = 0; i < team.length; i++) {
     const infoElement = team[i];
     console.log(infoElement.name, infoElement.role, infoElement.image);
+    // Milestone2
+    // outputDom sotto forma di stringa
+    const outputDom = document.getElementById("team");
+    outputDom.innerHTML += `<img src="img/${infoElement.image}" alt="${infoElement.name}"> <br> ${"Nome: "} ${infoElement.name} <br> ${"Ruolo: "} ${infoElement.role} <br><hr>`;
 }
+
+
+
 // MILESTONE 2:
 // stampare le stesse informazioni su DOM sottoforma di stringhe
-// const teamInfoDom = document.querySelector('.team');
-// let myString = JSON.stringify(person);
-// document.getElementById("demo").innerHTML = myString;
+// prova con JSON.stringify
+// let teamInfoDom = JSON.stringify(team);
+// document.getElementById("team").innerHTML = teamInfoDom;
 
-let teamInfoDom = JSON.stringify(team);
-document.getElementById("team").innerHTML = teamInfoDom;
+
+
+
+
+
+// display by name :
+
+// document.getElementById("demo").innerHTML =
+// person.name + "," + person.age + "," + person.city;
+
+
+
+
+
+
+// display with loop :
+
+// let txt = "";
+// for (let x in person) {
+// txt += person[x] + " ";
+// };
+
+// document.getElementById("demo").innerHTML = txt;
