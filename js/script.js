@@ -43,7 +43,7 @@ for (let i = 0; i < team.length; i++) {
     // Milestone2
     // outputDom sotto forma di stringa
     const outputDom = document.getElementById("team");
-    outputDom.innerHTML += `<img src="img/${infoElement.image}" alt="${infoElement.name}"> <br> ${"Nome: "} ${infoElement.name} <br> ${"Ruolo: "} ${infoElement.role} <br><hr>`;
+    outputDom.innerHTML += `<img src="img/${infoElement.image}" alt=""> <br> ${"Nome: "} ${infoElement.name} <br> ${"Ruolo: "} ${infoElement.role} <br><hr>`;
 }
 
 
